@@ -1,0 +1,8 @@
+---
+# Ansible Galaxy roles.
+- src: geerlingguy.elasticsearch
+  version: 3.0.1
+- src: geerlingguy.kibana
+  version: 3.2.1
+- src: https://github.com/jaredboone/ansible-role-logstash # URL to my fork of the Galaxy role's GitHub repository.
+  name: geerlingguy.logstash # save the role with the name it had when downloaded from Galaxy.

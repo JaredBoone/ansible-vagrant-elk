@@ -1,0 +1,10 @@
+---
+- import_role: 
+    name: geerlingguy.java
+
+- import_role: 
+    name: ansible-role-logstash
+  # vars:
+    # generated with: 
+    # sudo openssl req -x509 -batch -nodes -days 3650 -newkey rsa:2048 -keyout elk-vagrant.key -out elk-vagrant.crt
+

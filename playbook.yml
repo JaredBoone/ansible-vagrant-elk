@@ -1,0 +1,20 @@
+---
+- hosts: vagrant
+  become: yes
+  roles:
+    # - role: elasticsearch
+    #   tags: elasticsearch
+    - role: logstash
+      tags: logstash
+    # - role: kibana
+    #   tags: kibana
+
+- hosts: remotes
+  become: yes
+  roles:
+    - role: elasticsearch
+      tags: elasticsearch
+    - role: logstash
+      tags: logstash
+    - role: kibana
+      tags: kibana
